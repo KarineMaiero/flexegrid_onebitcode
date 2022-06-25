@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Open+Sans&family=Poppins:wght@400;600&family=Roboto&family=Source+Sans+Pro:wght@300;400;700&family=Teko:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Open+Sans&family=Poppins:wght@400;600&family=Roboto&family=Saira+Condensed:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&family=Teko:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Lato:wght@400;700&family=Monda:wght@400;700&family=Montserrat&family=Open+Sans&family=Poppins:wght@400;600&family=Roboto&family=Saira+Condensed:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&family=Teko:wght@400;700&display=swap');
+
+:root {
+    --dark-gray: #1D1D1D;
+    --ligth-black: #2E2E2E;
+    --dark-white: #ffff;
+    --one-bitcode: #790524;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--dark-white);
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 24px;
+}
+/*Seção de navegação*/
+
+.header {
+    height: 80px;
+    background-color: var(--ligth-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    font-family: 'Teko', sans-serif;
+    padding: 20px;
+}
+
+.logo {
+    width: 220px;
+  
+}
+
+.navegation {
+    color: var(--ligth-black);
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  
+}
+
+/*Seção de main*/
+
+.main {
+    background-color: var(--dark-gray);
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow:7px -1px 35px -7px rgba(0,0,0,0.69);
+    font-family: 'Arsenal', sans-serif;
+}
+
+.sport-image {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/*Seção cards geral*/
+
+.fullscreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*Seção principal*/
+
+.principal-container {
+    padding-top: 70px;
+    display: grid;
+    grid-template-areas: 
+    "sport1 sport2 sport3"
+    "sport4 sport6 sport6"
+    "sport7 sport8 sport9"
+    "sport10 sport11 sport12"
+    ;
+}
+/* rgb(51, 112, 161 */
+.sport {
+    border: 2px solid #790524; 
+    margin: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 310px;
+}
+
+/*Seção aside*/
+.aside-container {
+    background-color: var(--one-bitcode);
+    border-radius: 10px;
+    margin-top: 70px;
+    border-color: aliceblue;
+
+}
+
+/*Seção footer*/
+
+.footer {
+    height: 60px;
+    background-color: var(--ligth-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    font-family: 'Teko', sans-serif;
+    padding: 20px;
+}
+
+.logo-footer {
+    width: 160px;
+}
+
+a {
+    text-decoration: none;
+}
