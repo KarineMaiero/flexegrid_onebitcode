@@ -18,31 +18,33 @@
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 56px;
     margin-bottom: 10px;
 }
 h3 {
-    font-size: 30px;
+    font-size: 26px;
 }
 
 p {
-    font-size: 24px;
+    font-size: 18px;
 }
 /*Seção de navegação*/
 
 .header {
-    height: 80px;
+    height: 60px;
     background-color: var(--ligth-black);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 26px;
+    font-size: 24px;
     font-family: 'Teko', sans-serif;
-    padding: 20px;
+    padding: 15px;
+    flex-wrap: wrap;
+
 }
 
 .logo {
-    width: 220px;
+    width: 180px;
   
 }
 
@@ -51,7 +53,12 @@ p {
     list-style: none;
     display: flex;
     gap: 20px;
-  
+    cursor: pointer;
+    transition:  .4s;
+}
+
+.navegation:hover {
+    border-bottom: 2px solid var(--dark-white);
 }
 
 /*Seção de main*/
@@ -73,9 +80,9 @@ p {
 /*Seção cards geral*/
 
 .fullscreen {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "principal-container" "aside-container";
 }
 
 
@@ -106,6 +113,10 @@ p {
     border-radius: 10px;
     margin-top: 70px;
     border-color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 300px;
 
 }
 
